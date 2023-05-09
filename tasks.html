@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>Tasks</title>
+	<meta charset="UTF-8">
+	<meta name="format-detection" content="telephone=no">
+	<!-- <style>body{opacity: 0;}</style> -->
+	<link rel="stylesheet" href="css/style.min.css?_v=20230509215400">
+	<link rel="shortcut icon" href="favicon.ico">
+	<!-- <meta name="robots" content="noindex, nofollow"> -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+	<div class="wrapper">
+		<header class="header _search">
+			<div class="header__container">
+				<a href="" class="header__logo">Logo</a>
+				<div class="header__search-container">
+					<form action="/" class="header__search-form form-search">
+						<div class="form-search__input-block">
+							<input type="text" class="form-search__input" size="1" placeholder="Search" name="search" />
+						</div>
+						<button type="submit" class="form-search__submit">
+							<img src="img/icons/Search.svg" alt="search-ico" />
+						</button>
+						<span></span>
+						<div class="form-search__filter">
+							<button type="button" class="form-search__filter-btn">
+								<p>filter</p>
+								<img src="img/icons/Sort.svg" alt="sort-ico" />
+							</button>
+							<div class="form-search__filter-body body-filter">
+								<div class="body-filter__input">
+									<input type="checkbox" name="" id="" />
+								</div>
+							</div>
+						</div>
+					</form>
+				</div>
+				<div class="header__actives">
+					<a href="/home.html" class="header__link">About Us</a>
+					<button class="header__account">
+						<img src="img/icons/User.svg" alt="user-ico" />
+					</button>
+				</div>
+			</div>
+		</header>
+
+		<main class="page page-tasks">
+			<section class="page__section tasks-section">
+				<div class="tasks-section__container">
+					<div class="tasks-section__create create-task">
+						<form action="/tasks.html" method="get" class="create-task__form">
+							<div class="create-task__title-block">
+								<input type="text" name="meeting-name" class="create-task__input-name" size="1" placeholder="Meeting Name" />
+								<div class="create-task__link-block">
+									<p>
+										https://www.youtube.com/watchdfbdfdsdsfsgghrfh
+									</p>
+									<button type="button" class="create-task__link-copy">
+										<img src="img/icons/link.svg" alt="link-ico" />
+									</button>
+								</div>
+							</div>
+							<div class="create-task__scroll-block">
+								<div class="create-task__date-block">
+									<div class="create-task__calendar"></div>
+									<ul class="create-task__dates dates" data-spollers>
+										<li class="dates__item">
+											<button type="button" data-spoller class="dates__title">
+												<p>May 2023 - 6 Saturday</p>
+												<img src="img/icons/arrow-up.svg" alt="arrow-ico" />
+											</button>
+											<ul class="dates__body">
+												<li class="dates__time">
+													12:00 - 13:00
+												</li>
+												<li class="dates__time">
+													14:00 - 15:00
+												</li>
+												<li class="dates__time">
+													16:30 - 17:30
+												</li>
+											</ul>
+										</li>
+
+										<li class="dates__item">
+											<button type="button" data-spoller class="dates__title">
+												<p>May 2023 - 8 Saturday</p>
+												<img src="img/icons/arrow-up.svg" alt="arrow-ico" />
+											</button>
+											<ul class="dates__body">
+												<li class="dates__time">
+													12:00 - 13:00
+												</li>
+												<li class="dates__time">
+													14:00 - 15:00
+												</li>
+												<li class="dates__time">
+													16:30 - 17:30
+												</li>
+											</ul>
+										</li>
+									</ul>
+								</div>
+								<div class="create-task__description">
+									<h4 class="create-task__desc-title">
+										Description
+									</h4>
+									<textarea class="create-task__desc-text" name="description" rows="4" placeholder="Describe your meet..."></textarea>
+								</div>
+								<div class="create-task__buttons">
+									<button type="button" class="create-task__cancel-btn button">
+										Cancel
+									</button>
+									<button type="submit" class="create-task__publish-btn button">
+										Publish
+									</button>
+								</div>
+							</div>
+						</form>
+					</div>
+					<div class="tasks-section__content">
+						<div class="tasks-section__actives">
+							<button type="button" class="tasks-section__create-btn button">
+								Create
+							</button>
+							<button type="button" class="tasks-section__random-btn button">
+								<img src="img/icons/Cube.svg" alt="cube-ico" />
+							</button>
+						</div>
+						<div class="tasks-section__tasks-container">
+							<div class="tasks-section__tasks-content">
+								<ul class="tasks-section__tasks-list list-tasks">
+									<li class="list-tasks__task-el">
+										<button type="submit" class="list-tasks__task">
+											<div class="list-tasks__block">
+												<h3 class="list-tasks__title">
+													Meeting Name
+												</h3>
+												<div class="list-tasks__date">
+													May 2023 - 8 Sturday
+												</div>
+											</div>
+											<div class="list-tasks__description">
+												<p>
+													Lorem ipsum, dolor sit amet
+													consectetur adipisicing elit. Quia et
+													in voluptatem optio facilis.
+													Distinctio ut tempora culpa tempore
+													vero.Lorem ipsum, dolor sit amet
+													consectetur adipisicing elit. Quia et
+													in voluptatem optio facilis.
+													Distinctio ut tempora culpa tempore
+													vero.
+												</p>
+											</div>
+										</button>
+									</li>
+									<li class="list-tasks__task-el">
+										<button type="submit" class="list-tasks__task">
+											<div class="list-tasks__block">
+												<h3 class="list-tasks__title">
+													Meeting Name
+												</h3>
+												<div class="list-tasks__date">
+													May 2023 - 8 Sturday
+												</div>
+											</div>
+											<div class="list-tasks__description">
+												<p>
+													Lorem ipsum, dolor sit amet
+													consectetur adipisicing elit. Quia et
+													in voluptatem optio facilis.
+													Distinctio ut tempora culpa tempore
+													vero.
+												</p>
+											</div>
+										</button>
+									</li>
+									<li class="list-tasks__task-el">
+										<button type="submit" class="list-tasks__task">
+											<div class="list-tasks__block">
+												<h3 class="list-tasks__title">
+													Meeting Name
+												</h3>
+												<div class="list-tasks__date">
+													May 2023 - 8 Sturday
+												</div>
+											</div>
+											<div class="list-tasks__description">
+												<p>
+													Lorem ipsum, dolor sit amet
+													consectetur adipisicing elit. Quia et
+													in voluptatem optio facilis.
+													Distinctio ut tempora culpa tempore
+													vero.
+												</p>
+											</div>
+										</button>
+									</li>
+									<li class="list-tasks__task-el">
+										<button type="submit" class="list-tasks__task">
+											<div class="list-tasks__block">
+												<h3 class="list-tasks__title">
+													Meeting Name
+												</h3>
+												<div class="list-tasks__date">
+													May 2023 - 8 Sturday
+												</div>
+											</div>
+											<div class="list-tasks__description">
+												<p>
+													Lorem ipsum, dolor sit amet
+													consectetur adipisicing elit. Quia et
+													in voluptatem optio facilis.
+													Distinctio ut tempora culpa tempore
+													vero.
+												</p>
+											</div>
+										</button>
+									</li>
+									<li class="list-tasks__task-el">
+										<button type="submit" class="list-tasks__task">
+											<div class="list-tasks__block">
+												<h3 class="list-tasks__title">
+													Meeting Name
+												</h3>
+												<div class="list-tasks__date">
+													May 2023 - 8 Sturday
+												</div>
+											</div>
+											<div class="list-tasks__description">
+												<p>
+													Lorem ipsum, dolor sit amet
+													consectetur adipisicing elit. Quia et
+													in voluptatem optio facilis.
+													Distinctio ut tempora culpa tempore
+													vero.
+												</p>
+											</div>
+										</button>
+									</li>
+									<li class="list-tasks__task-el">
+										<button type="submit" class="list-tasks__task">
+											<div class="list-tasks__block">
+												<h3 class="list-tasks__title">
+													Meeting Name
+												</h3>
+												<div class="list-tasks__date">
+													May 2023 - 8 Sturday
+												</div>
+											</div>
+											<div class="list-tasks__description">
+												<p>
+													Lorem ipsum, dolor sit amet
+													consectetur adipisicing elit. Quia et
+													in voluptatem optio facilis.
+													Distinctio ut tempora culpa tempore
+													vero.
+												</p>
+											</div>
+										</button>
+									</li>
+									<li class="list-tasks__task-el">
+										<button type="submit" class="list-tasks__task">
+											<div class="list-tasks__block">
+												<h3 class="list-tasks__title">
+													Meeting Name
+												</h3>
+												<div class="list-tasks__date">
+													May 2023 - 8 Sturday
+												</div>
+											</div>
+											<div class="list-tasks__description">
+												<p>
+													Lorem ipsum, dolor sit amet
+													consectetur adipisicing elit. Quia et
+													in voluptatem optio facilis.
+													Distinctio ut tempora culpa tempore
+													vero.
+												</p>
+											</div>
+										</button>
+									</li>
+									<li class="list-tasks__task-el">
+										<button type="submit" class="list-tasks__task">
+											<div class="list-tasks__block">
+												<h3 class="list-tasks__title">
+													Meeting Name
+												</h3>
+												<div class="list-tasks__date">
+													May 2023 - 8 Sturday
+												</div>
+											</div>
+											<div class="list-tasks__description">
+												<p>
+													Lorem ipsum, dolor sit amet
+													consectetur adipisicing elit. Quia et
+													in voluptatem optio facilis.
+													Distinctio ut tempora culpa tempore
+													vero.
+												</p>
+											</div>
+										</button>
+									</li>
+								</ul>
+							</div>
+						</div>
+						<div class="tasks-section__statistics">
+							<div class="tasks-section__statistic">
+								<img src="img/icons/User.svg" alt="user-ico" />
+								<p>456 voices</p>
+							</div>
+							<div class="tasks-section__statistic">
+								<img src="img/icons/calendar.svg" alt="calendar-ico" />
+								<p>23 meeting</p>
+							</div>
+						</div>
+					</div>
+					<div class="tasks-section__info">hihi</div>
+				</div>
+			</section>
+
+			<!-- <section class="page__section main-section">
+               <div class="main-section__container">
+                  <input data-datepicker type="text" name="" />
+               </div>
+            </section> -->
+		</main>
+		<footer class="footer">
+			<div class="footer__container">
+			</div>
+		</footer>
+	</div>
+	<div id="sign-up" aria-hidden="true" class="popup">
+		<div class="popup__wrapper">
+			<div class="popup__content">
+				<!-- <button data-close type="button" class="popup__close">Закрити</button> -->
+				<div class="popup__body">
+					<div data-tabs class="tabs">
+						<nav data-tabs-titles class="tabs__navigation">
+							<button type="button" class="tabs__title _tab-active">
+								Log In
+							</button>
+							<button type="button" class="tabs__title _blue">
+								Sign Up
+							</button>
+						</nav>
+						<div data-tabs-body class="tabs__content">
+							<div class="tabs__body login-body">
+								<form action="/home.html" method="get" class="login-body__form">
+									<div class="login-body__inputs inputs">
+										<div class="login-body__input-block input-block">
+											<input type="email" name="email" id="email" class="login-body__input input input-email" placeholder="Email" />
+										</div>
+
+										<div class="login-body__input-block input-block">
+											<input type="password" name="password" id="password" class="login-body__input input" placeholder="Password" />
+											<button type="button" class="login-body__frgt-btn">
+												Forgot Password?
+											</button>
+										</div>
+									</div>
+
+									<button type="submit" class="login-body__sbm-btn sbm-btn button">
+										Login
+									</button>
+
+									<div class="login-body__with-socials with-socials">
+										<button type="button" class="login-body__facebook-btn facebook-btn button">
+											f
+										</button>
+
+										<button type="button" class="login-body__google-btn google-btn button">
+											G
+										</button>
+									</div>
+								</form>
+							</div>
+							<div class="tabs__body signup-body">
+								<form action="/" method="get" class="signup-body__form">
+									<div class="login-body__inputs inputs">
+										<div class="signup-body__name">
+											<div class="signup-body__input-block input-block">
+												<input type="text" name="firstName" id="firstName" class="signup-body__input input" placeholder="First Name" />
+											</div>
+											<div class="signup-body__input-block input-block">
+												<input type="text" name="lastName" id="lastName" class="signup-body__input input" placeholder="Last Name" />
+											</div>
+										</div>
+										<div class="signup-body__input-block input-block">
+											<input type="email" name="email" id="email" class="signup-body__input input" placeholder="Email" />
+										</div>
+
+										<div class="signup-body__input-block input-block">
+											<input type="password" name="password" id="password" class="signup-body__input input" placeholder="Password" />
+										</div>
+										<div class="signup-body__input-block input-block">
+											<input type="password" name="confirm-password" id="confirm-password" class="signup-body__input input" placeholder="Confirm Password" />
+										</div>
+									</div>
+
+									<button type="submit" class="signup-body__sbm-btn sbm-btn button">
+										Sign Up
+									</button>
+
+									<div class="signup-body__with-socials with-socials">
+										<button type="button" class="login-body__facebook-btn facebook-btn button">
+											f
+										</button>
+
+										<button type="button" class="login-body__google-btn google-btn button">
+											G
+										</button>
+									</div>
+								</form>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div id="sign-in" aria-hidden="true" class="popup">
+		<div class="popup__wrapper">
+			<div class="popup__content">
+				<button data-close type="button" class="popup__close">Закрити</button>
+				<div class="popup__text" style="color: black">Text</div>
+			</div>
+		</div>
+	</div>
+	<script src="js/app.min.js?_v=20230509215400"></script>
+</body>
+
+</html>
