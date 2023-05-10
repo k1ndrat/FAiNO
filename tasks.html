@@ -6,7 +6,7 @@
 	<meta charset="UTF-8">
 	<meta name="format-detection" content="telephone=no">
 	<!-- <style>body{opacity: 0;}</style> -->
-	<link rel="stylesheet" href="css/style.min.css?_v=20230509215400">
+	<link rel="stylesheet" href="css/style.min.css?_v=20230510203926">
 	<link rel="shortcut icon" href="favicon.ico">
 	<!-- <meta name="robots" content="noindex, nofollow"> -->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -124,10 +124,10 @@
 					</div>
 					<div class="tasks-section__content">
 						<div class="tasks-section__actives">
-							<button type="button" class="tasks-section__create-btn button">
+							<button type="button" class="tasks-section__create-btn">
 								Create
 							</button>
-							<button type="button" class="tasks-section__random-btn button">
+							<button type="button" class="tasks-section__random-btn">
 								<img src="img/icons/Cube.svg" alt="cube-ico" />
 							</button>
 						</div>
@@ -320,7 +320,127 @@
 							</div>
 						</div>
 					</div>
-					<div class="tasks-section__info">hihi</div>
+					<div class="tasks-section__info info-task">
+						<div class="info-task__main-block">
+							<h4 class="info-task__title">Meeting Name</h4>
+
+							<div class="info-task__slider swiper">
+								<button type="button" class="swiper-button-prev">
+									<img src="img/icons/arrow-up.svg" alt="arrow-ico" />
+								</button>
+
+								<div class="info-task__wrapper swiper-wrapper">
+									<div class="info-task__slide swiper-slide">
+										<div class="swiper-slide__date">
+											May 2023 - 6 Saturday
+										</div>
+										<ul class="swiper-slide__list">
+											<li class="swiper-slide__list-item">
+												<form action="/" class="swiper-slide__body">
+													<div class="swiper-slide__input-check checked">
+														<input type="hidden" name="voted" />
+														<img src="img/icons/Lux.svg" alt="lux-ico" />
+													</div>
+													<label class="swiper-slide__label-check">
+														<div>
+															<p>12:00 - 13:00</p>
+															<span class="percent">40%</span>
+														</div>
+														<span class="bar">
+															<span class="bar-red"></span>
+														</span>
+													</label>
+												</form>
+											</li>
+											<li class="swiper-slide__list-item">
+												<form action="/" class="swiper-slide__body checked">
+													<div class="swiper-slide__input-check">
+														<input type="hidden" name="voted" value="true" />
+														<img src="img/icons/Lux.svg" alt="lux-ico" />
+													</div>
+													<label class="swiper-slide__label-check">
+														<div>
+															<p>12:00 - 13:00</p>
+															<span class="percent">40%</span>
+														</div>
+														<span class="bar">
+															<span class="bar-red"></span>
+														</span>
+													</label>
+												</form>
+											</li>
+										</ul>
+									</div>
+									<div class="info-task__slide swiper-slide">
+										<div class="swiper-slide__date">
+											May 2023 - 6 Saturday
+										</div>
+										<ul class="swiper-slide__list">
+											<li class="swiper-slide__list-item">
+												<form action="/" class="swiper-slide__body">
+													<div class="swiper-slide__input-check checked">
+														<input type="hidden" name="voted" />
+														<img src="img/icons/Lux.svg" alt="lux-ico" />
+													</div>
+													<label class="swiper-slide__label-check">
+														<div>
+															<p>12:00 - 13:00</p>
+															<span class="percent">40%</span>
+														</div>
+														<span class="bar">
+															<span class="bar-red"></span>
+														</span>
+													</label>
+												</form>
+											</li>
+											<li class="swiper-slide__list-item">
+												<form action="/" class="swiper-slide__body checked">
+													<div class="swiper-slide__input-check">
+														<input type="hidden" name="voted" value="true" />
+														<img src="img/icons/Lux.svg" alt="lux-ico" />
+													</div>
+													<label class="swiper-slide__label-check">
+														<div>
+															<p>12:00 - 13:00</p>
+															<span class="percent">40%</span>
+														</div>
+														<span class="bar">
+															<span class="bar-red"></span>
+														</span>
+													</label>
+												</form>
+											</li>
+										</ul>
+									</div>
+								</div>
+								<button type="button" class="swiper-button-next">
+									<img src="img/icons/arrow-up.svg" alt="arrow-ico" />
+								</button>
+
+								<div class="swiper-pagination"></div>
+							</div>
+
+							<div class="info-task__statistics statistics-info">
+								<div class="statistics-info__time">
+									<img src="img/icons/Clock.svg" alt="clock-ico" />
+									<span>02:12:05</span>
+								</div>
+								<div class="statistics-info__users">
+									<img src="img/icons/Users.svg" alt="users-ico" />
+									<span>136</span>
+								</div>
+							</div>
+						</div>
+						<div class="info-task__description">
+							<div class="info-task__desc-title">Description</div>
+							<p class="info-task__desc-text">
+								Lorem ipsum dolor sit amet consectetur adipisicing
+								elit. Quidem provident voluptates hic asperiores,
+								corporis repellendus odio, deserunt iusto dignissimos
+								amet similique minus voluptatibus, cons
+							</p>
+						</div>
+					</div>
 				</div>
 			</section>
 
@@ -340,7 +460,7 @@
 			<div class="popup__content">
 				<!-- <button data-close type="button" class="popup__close">Закрити</button> -->
 				<div class="popup__body">
-					<div data-tabs class="tabs">
+					<div data-tabs data-tabs-animate="1000" class="tabs">
 						<nav data-tabs-titles class="tabs__navigation">
 							<button type="button" class="tabs__title _tab-active">
 								Log In
@@ -370,11 +490,11 @@
 									</button>
 
 									<div class="login-body__with-socials with-socials">
-										<button type="button" class="login-body__facebook-btn facebook-btn button">
+										<button type="button" class="login-body__facebook-btn facebook-btn">
 											f
 										</button>
 
-										<button type="button" class="login-body__google-btn google-btn button">
+										<button type="button" class="login-body__google-btn google-btn">
 											G
 										</button>
 									</div>
@@ -408,11 +528,11 @@
 									</button>
 
 									<div class="signup-body__with-socials with-socials">
-										<button type="button" class="login-body__facebook-btn facebook-btn button">
+										<button type="button" class="signup-body__facebook-btn facebook-btn">
 											f
 										</button>
 
-										<button type="button" class="login-body__google-btn google-btn button">
+										<button type="button" class="signup-body__google-btn google-btn">
 											G
 										</button>
 									</div>
@@ -433,7 +553,7 @@
 			</div>
 		</div>
 	</div>
-	<script src="js/app.min.js?_v=20230509215400"></script>
+	<script src="js/app.min.js?_v=20230510203926"></script>
 </body>
 
 </html>
