@@ -3,13 +3,14 @@
 
 <head>
 	<title>Tasks</title>
-	<meta charset="UTF-8">
-	<meta name="format-detection" content="telephone=no">
+	<meta charset="UTF-8" />
+	<meta name="format-detection" content="telephone=no" />
 	<!-- <style>body{opacity: 0;}</style> -->
-	<link rel="stylesheet" href="css/style.min.css?_v=20230510203926">
-	<link rel="shortcut icon" href="favicon.ico">
+	<link rel="stylesheet" href="css/style.min.css?_v=20230511211422" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css?_v=20230511211422" />
+	<link rel="shortcut icon" href="favicon.ico" />
 	<!-- <meta name="robots" content="noindex, nofollow"> -->
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 </head>
 
 <body>
@@ -66,43 +67,127 @@
 							</div>
 							<div class="create-task__scroll-block">
 								<div class="create-task__date-block">
-									<div class="create-task__calendar"></div>
+									<div class="create-task__calendar">
+										<div class="calendar">
+											<div class="month">
+												<i class="fas fa-angle-left prev"></i>
+												<div class="date">
+													<h1></h1>
+													<p></p>
+												</div>
+												<i class="fas fa-angle-right next"></i>
+											</div>
+											<div class="weekdays">
+												<div>Sun</div>
+												<div>Mon</div>
+												<div>Tue</div>
+												<div>Wed</div>
+												<div>Thu</div>
+												<div>Fri</div>
+												<div>Sat</div>
+											</div>
+											<div class="days"></div>
+										</div>
+										<span class="selectedDay" hidden></span>
+										<div class="create-task__time-block">
+											<div class="create-task__meet-time">
+												<select name="startTime" data-class-modif="form" data-show-selected>
+													<option value="" selected>
+														Start time
+													</option>
+													<option value="00:00">00:00</option>
+													<option value="00:30">00:30</option>
+													<option value="01:00">01:00</option>
+													<option value="01:30">01:30</option>
+													<option value="02:00">02:00</option>
+													<option value="02:30">02:30</option>
+													<option value="03:00">03:00</option>
+													<option value="03:30">03:30</option>
+													<option value="04:00">04:00</option>
+													<option value="04:30">04:30</option>
+												</select>
+												<select name="endTime" data-class-modif="form" data-show-selected>
+													<option value="" selected>
+														End time
+													</option>
+													<option value="00:00">00:00</option>
+													<option value="00:30">00:30</option>
+													<option value="01:00">01:00</option>
+													<option value="01:30">01:30</option>
+													<option value="02:00">02:00</option>
+													<option value="02:30">02:30</option>
+													<option value="03:00">03:00</option>
+													<option value="03:30">03:30</option>
+													<option value="04:00">04:00</option>
+													<option value="04:30">04:30</option>
+												</select>
+												<button type="button" class="create-task__time-btn">
+													OK
+												</button>
+											</div>
+											<div class="create-task__voting-time">
+												<p>Voting</p>
+												<div>
+													<input type="text" name="hours" maxlength="2" placeholder="hh" />
+													<span>:</span>
+													<input type="text" name="minutes" maxlength="2" placeholder="mm" />
+													<span>:</span>
+													<input type="text" name="seconds" maxlength="2" placeholder="ss" />
+												</div>
+											</div>
+										</div>
+									</div>
 									<ul class="create-task__dates dates" data-spollers>
-										<li class="dates__item">
-											<button type="button" data-spoller class="dates__title">
-												<p>May 2023 - 6 Saturday</p>
-												<img src="img/icons/arrow-up.svg" alt="arrow-ico" />
-											</button>
-											<ul class="dates__body">
-												<li class="dates__time">
-													12:00 - 13:00
-												</li>
-												<li class="dates__time">
-													14:00 - 15:00
-												</li>
-												<li class="dates__time">
-													16:30 - 17:30
-												</li>
-											</ul>
-										</li>
+										<p class="empty-dates">No dates yet</p>
+										<!-- <li class="dates__item">
+                                    <button
+                                       type="button"
+                                       data-spoller
+                                       class="dates__title"
+                                    >
+                                       <p>May 2023 - 6 Saturday</p>
+                                       <img
+                                          src="img/icons/arrow-up.svg"
+                                          alt="arrow-ico"
+                                       />
+                                    </button>
+                                    <ul class="dates__body">
+                                       <li class="dates__time">
+                                          12:00 - 13:00
+                                       </li>
+                                       <li class="dates__time">
+                                          14:00 - 15:00
+                                       </li>
+                                       <li class="dates__time">
+                                          16:30 - 17:30
+                                       </li>
+                                    </ul>
+                                 </li>
 
-										<li class="dates__item">
-											<button type="button" data-spoller class="dates__title">
-												<p>May 2023 - 8 Saturday</p>
-												<img src="img/icons/arrow-up.svg" alt="arrow-ico" />
-											</button>
-											<ul class="dates__body">
-												<li class="dates__time">
-													12:00 - 13:00
-												</li>
-												<li class="dates__time">
-													14:00 - 15:00
-												</li>
-												<li class="dates__time">
-													16:30 - 17:30
-												</li>
-											</ul>
-										</li>
+                                 <li class="dates__item">
+                                    <button
+                                       type="button"
+                                       data-spoller
+                                       class="dates__title"
+                                    >
+                                       <p>May 2023 - 8 Saturday</p>
+                                       <img
+                                          src="img/icons/arrow-up.svg"
+                                          alt="arrow-ico"
+                                       />
+                                    </button>
+                                    <ul class="dates__body">
+                                       <li class="dates__time">
+                                          12:00 - 13:00
+                                       </li>
+                                       <li class="dates__time">
+                                          14:00 - 15:00
+                                       </li>
+                                       <li class="dates__time">
+                                          16:30 - 17:30
+                                       </li>
+                                    </ul>
+                                 </li> -->
 									</ul>
 								</div>
 								<div class="create-task__description">
@@ -553,7 +638,7 @@
 			</div>
 		</div>
 	</div>
-	<script src="js/app.min.js?_v=20230510203926"></script>
+	<script src="js/app.min.js?_v=20230511211422"></script>
 </body>
 
 </html>
